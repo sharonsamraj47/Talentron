@@ -1,0 +1,863 @@
+.header-class{
+    width: 1366px;
+    height: 70px;
+  
+    
+      top: 15px;
+      left: 83px;
+      gap: 0px;
+      opacity: 0px;
+  
+      }
+      .header-font-size{
+          font-size: 14px !important;
+          font-weight: 500;
+          font-family: 'Montserrat', sans-serif;
+      
+      }
+      .desktop-logo-img {
+        width: 149.39px;
+        height: 40px;
+        top: 15px;
+        left: 83px;
+        gap: 0px;
+        opacity: 0px;
+  
+    }
+    .custom-font {
+      font-family: 'Montserrat', sans-serif;
+    }
+  
+  
+    .mobile-logo {
+    max-height: 35px;
+  }
+  
+    .title-font{
+      font-size: 34px;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+  
+    }
+    .title-subtext{
+      font-size: 14px;
+      font-weight: 400;
+      font-family: 'Montserrat', sans-serif;
+  
+    }
+    .button-seeker{
+      width: 130px;
+      height: 40px;
+      backdrop-filter: blur(4px);
+      background-color: #109BFF;
+      font-size: 14px;
+      font-weight: 600;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+  
+    }
+  
+  
+  /* below header - start */
+  
+    .scrollable-container {
+      overflow-x: auto;
+      white-space: nowrap;
+  }
+  
+    .scrollable-text{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17.07px;
+      color: #575757;
+    }
+  
+  .scrollable-container .card {
+      display: inline-block;
+      margin-right: 10px;
+      min-width: 150px;
+  }
+  
+  .carousel-images img {
+      border-radius: 10px;
+      height: auto;
+  }
+  
+  .image-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  
+  .image-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      
+  }
+  
+  .image-container img {
+      width: 150px;
+      height: auto;
+      border-radius: 50%;
+      
+  }
+  
+  
+  
+  
+  .arrow-container {
+  position: relative; /* Set relative positioning for proper alignment of arrows */
+  width: 100%; /* Ensure it spans the full width of the container */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none; /* Ensures container does not block clicks */
+  }
+  
+  /* Arrow styles (shared for all views) */
+  .arrow-left, 
+  .arrow-right {
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 1.5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  pointer-events: auto; /* Restores click functionality */
+  }
+  
+  /* Desktop view */
+  .arrow-left {
+  left: 30px;
+  top: 35%;
+  transform: translateY(-50%);
+  position: absolute;
+  }
+  
+  .arrow-right {
+  right: 60px;
+  top: 35%;
+  transform: translateY(-50%);
+  position: absolute;
+  }
+  
+  /* Tablet View (768px - 1024px) */
+  @media (max-width: 1024px) {
+  .arrow-left,
+  .arrow-right {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  padding: 8px;
+  }
+  .arrow-left {
+  left: 15px;
+  top: 50%;
+  }
+  .arrow-right {
+  right: 15px;
+  top: 50%;
+  }
+  }
+  
+  /* Mobile View (up to 767px) */
+  @media (max-width: 767px) {
+  .arrow-left,
+  .arrow-right {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  padding: 6px;
+  }
+  .arrow-left {
+  left: 10px;
+  top: 40%;
+  }
+  .arrow-right {
+  right: 10px;
+  top: 40%;
+  }
+  }
+  
+  /* Tablet View (768px - 1024px) */
+  @media (max-width: 1024px) {
+  .image-wrapper img {
+  width: 120px; /* Reduce size for tablet */
+  height: 120px; /* Maintain aspect ratio */
+  }
+  
+  
+  }
+  
+  /* Mobile View (up to 767px) */
+  @media (max-width: 767px) {
+  
+    .mobile-image-container {
+      display: block;
+      margin: 0 auto;
+  }
+  
+  .mobile-image-container img {
+      width: 100%;
+      max-width: 300px; /* Adjust to desired size */
+      height: auto;
+  }
+  .mobile-image-container {
+    position: relative;
+    z-index: 1000;
+  }
+  }
+  
+  
+  
+  .scrollable-row {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      justify-content: flex-start;
+  }
+  
+  .scrollable-row .card {
+  
+      min-width: 215.54px;
+      flex: 0 0 auto;
+      text-align: center;
+      padding: 20px;
+      border: 2px solid #006CBB80;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-right: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+  
+  }
+  
+  .card img {
+  
+      width: 48.12px;
+      height: 44.44px;
+      top: 470.93px;
+      left: 193.28px;
+      display: block;
+      
+      
+      
+  
+  }
+  
+  @media (max-width: 767px){
+    .scrollable-row2 .card img {
+      width: 50px;
+      height: 50px;
+      
+    }
+  }
+  
+  .circle-button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #006CBB; /* Bootstrap primary blue */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  .circle-button i {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+  }
+  
+  /* below header - end */
+  
+  
+  
+  
+  
+    /* Why Client Choose Us - Start */
+  .why-client-overlay-container {
+    position: relative;
+    width: 100%;
+    max-width: 531px;
+    margin: 0 auto; /* Center the container */
+    
+  }
+  
+  .why-client-overlay-container .main-image {
+    width: 90%; /* Responsive image */
+    height: auto;
+    border: 2px solid #109BFF;
+    border-radius: 10px;
+  }
+  
+  .why-client-overlay-container .overlay-top-right {
+    position: absolute;
+    width: 25%; /* Scales relative to container width */
+    height: auto;
+    top: 72%; /* Adjust position for design */
+    right: 3%; /* Adjust position for design */
+  }
+  
+  .why-client-overlay-container .overlay-bottom-right {
+    position: absolute;
+    width: 20%; /* Scales relative to container width */
+    height: auto;
+    top: 0%; /* Adjust based on design */
+    left: 70%; /* Adjust based on design */
+    border-radius: 4px 0 0 0;
+  }
+  
+  @media (max-width: 768px) {
+    .why-client-overlay-container .main-image {
+      display: block;
+      margin: 0 auto;
+      width: 100%; /* Adjust for smaller screens */
+      height: auto;
+    }
+  
+    .why-client-overlay-container .overlay-top-right {
+      top: 75%; /* Adjust for smaller screens */
+      right: -7%; /* Adjust for smaller screens */
+      width: 25%; /* Adjust for smaller screens */
+    }
+  
+    .why-client-overlay-container .overlay-bottom-right {
+      top: 0%; /* Adjust for smaller screens */
+      left: 80%; /* Adjust for smaller screens */
+      width: 20%; /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .why-client-overlay-container .main-image {
+      display: block;
+      margin: 0 auto;
+      width: 80%; /* Responsive image */
+      height: auto;
+    }
+  
+    .why-client-overlay-container .overlay-top-right {
+      top: 75%; /* Adjust for extra small screens */
+      right: 5%; /* Adjust for extra small screens */
+      width: 20%; /* Adjust for extra small screens */
+    }
+  
+    .why-client-overlay-container .overlay-bottom-right {
+      top: 0%; /* Adjust for extra small screens */
+      left: 75%; /* Adjust for extra small screens */
+      width: 15%; /* Adjust for extra small screens */
+    }
+  }
+  /* Why Client Choose Us - End */
+  
+  /* Talent Hiring process - start */
+  
+    
+  
+  
+  /* Talent Hiring process - end */
+  
+  /* Video container - start */
+  
+  .video-container {
+    position: relative;
+    padding-top: 40%; /* Reduced aspect ratio for smaller height */
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    margin: 0 auto; /* Center the container */
+    max-height: 550px; /* Set a maximum height */
+  }
+  
+  .video-container iframe, .video-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px; /* Optional: Add rounded corners */
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 60px; /* Reduced size */
+    height: 60px; /* Reduced size */
+    background: #006CBB;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .play-button svg {
+    fill: white;
+    width: 30px; /* Reduced size */
+    height: 30px; /* Reduced size */
+  }
+  
+  .video-container img {
+    filter: brightness(0.7);
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .video-container {
+        padding-top: 50%; /* Slightly taller for tablets */
+        max-height: 350px; /* Reduce height for tablets */
+    }
+  
+    .play-button {
+        width: 50px;
+        height: 50px;
+    }
+  
+    .play-button svg {
+        width: 25px;
+        height: 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .video-container {
+        padding-top: 60%; /* Taller for small mobile screens */
+        max-height: 250px; /* Further reduce height for mobile phones */
+    }
+  
+    .play-button {
+        width: 40px;
+        height: 40px;
+    }
+  
+    .play-button svg {
+        width: 20px;
+        height: 20px;
+    }
+  } 
+  
+  /* Video container - end */
+  
+  /* Our Training Process - start */
+  
+  .training-section {
+    background-color: #EBF0F5;
+  }
+  
+  .training-container {
+    overflow-x: auto;
+    padding-top: 2rem;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .training-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    position: relative;
+    width: fit-content;
+    min-width: 100%;
+    justify-content: center;
+  }
+  
+  .training-step {
+    text-align: center;
+    min-width: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ensures content starts from the top */
+  
+  }
+  
+  .training-step img {
+    width: 125px;
+    height: 125px;
+    margin-bottom: 1rem;
+  }
+  
+  .line-circle {
+    position: relative;
+    width: 122%;
+    margin: 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+   
+  }
+  
+  .line-circle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #000000;
+    z-index: 1;
+  
+  
+    
+  }
+  
+  
+  
+  .circle {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  .step2-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.26px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color:  #333333;
+  
+  }
+  
+  .step2-time {
+    margin: 0.5rem 0;
+    padding: 0.2rem 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .step2-title {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    
+    line-height: 19.5px;
+    text-align: center;
+  }
+  .training-subpoints{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+   
+    margin: 5;
+  
+  }
+  
+  .custom-shape {
+    background-color: #006CBB; /* Bootstrap's primary color */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 13px;
+    position: relative;
+    display: inline-block;
+    border-radius: 3px 0 0 3px; /* Rounded left corners */
+  }
+  
+  .custom-shape::after {
+    content: '';
+    position: absolute;
+    top: -1.5px;
+    right: -24px; /* Adjust based on triangle width */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 3px 14px 25px; /* Adjust triangle size */
+    border-color: transparent transparent transparent #006CBB;
+  }
+  
+  @media (max-width: 768px) {
+    .training-container {
+        overflow-x: scroll;
+    }
+    .training-wrapper {
+        gap: 1.5rem;
+    }
+    .training-step {
+        min-width: 125px;
+        height: auto;
+    }
+    
+  }
+  
+  @media (max-width: 576px) {
+    .training-container {
+        overflow-x: scroll;
+    }
+    .training-step {
+        min-width: 100px;
+    }
+    .training-step img {
+        max-width: 125px;
+        height: auto;
+    }
+  }
+  
+  /* Our Training Process - End */
+  
+  /* why choose our training - start*/
+  .headline{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 29.26px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  
+  }
+  .subtitle{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #454545;
+  }
+  .subtext{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #454545;
+  
+  
+  }
+  .points{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #454545;
+    line-height: 19.5px;
+  
+  
+  }
+  .subheading{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  }
+  .overlay-container {
+  position: relative;
+  width: 100%;
+  max-width: 531px;
+  margin: 0 auto; /* Center the container */
+  }
+  
+  .overlay-container img:first-child {
+  width: 100%; /* Responsive image */
+  height: auto;
+  border: 2px solid #109BFF;
+  border-radius: 10px;
+  }
+  
+  .overlay-container img:last-child {
+  position: absolute;
+  width: 30%; /* Scales relative to container width */
+  height: auto;
+  top: 71%; /* Adjust based on design */
+  left: -8%; /* Adjust based on design */
+  border-radius: 4px 0px 0px 0px;
+  }
+  
+  .tick-mark {
+  color: #000000; /* Blue color for tick marks */
+  }
+  
+  .center-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  }
+  
+  .center-heading h2 {
+  font-weight: bold;
+  }
+  
+  .center-heading h5 {
+  color: gray;
+  }
+  
+  @media (max-width: 768px) {
+  .center-heading h2 {
+    font-size: 1.5rem;
+  }
+  
+  .center-heading h5 {
+    font-size: 1rem;
+  }
+  
+  .overlay-container img:last-child {
+    top: 71%; /* Adjust for smaller screens */
+    left: -8%; /* Adjust for smaller screens */
+    width: 30%; /* Adjust for smaller screens */
+  }
+  }
+  
+  @media (max-width: 576px) {
+  .overlay-container img:first-child {
+    display: block;
+    margin: 0 auto;
+    width: 80%; /* Responsive image */
+    height: auto;
+  }
+  .overlay-container img:last-child {
+    top: 76%; /* Adjust for extra small screens */
+    left: 5%; /* Adjust for extra small screens */
+    width: 20%; /* Adjust for extra small screens */
+  }
+  }
+  /* why choose our training - End*/
+  
+  /* Footer */
+  
+  .footer-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+  
+  
+  }
+  .footer-tele-email{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.63px;
+  
+  }
+  
+    .custom-submit {
+      width: 170px;
+      height: 40px;
+      top: 3543px;
+      left: 1113px;
+    
+  
+    }
+    .custom-font {
+      font-size: 0.9rem;
+      line-height: 1.5;
+  }
+  .custom-form input,
+  .custom-form button {
+      height: 40px; 
+  }
+  /* General Styles */
+  .custom-form {
+    max-width: 100%;
+    padding: 0 15px; /* Add space on left and right */
+  }
+  
+  /* Mobile View */
+  @media (max-width: 767.98px) {
+    .custom-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .custom-form .col-md-4, 
+    .custom-form .col-md-2 {
+        width: 90%; /* Wider fields with space on sides */
+        margin-bottom: 10px;
+    }
+  
+    .custom-submit {
+        align-self: center;
+    }
+  }
+   
+   /* Tablet View */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .custom-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .custom-form .col-md-4, 
+    .custom-form .col-md-2 {
+        width: 80%; /* Center and leave space on sides */
+        margin-bottom: 10px;
+    }
+  
+    .custom-submit {
+        align-self: center;
+    }
+  }
+      @media (max-width: 768px) {
+          .footer-top h2 {
+            font-size: 1.5rem;
+          }
+      
+          .footer-bottom h4 {
+            font-size: 1.2rem;
+          }
+      
+          .footer-bottom p {
+            font-size: 0.9rem;
+          }
+      
+          .footer-bottom img {
+            width: 20px;
+          }
+        }
+      
+        @media (max-width: 576px) {
+          .footer-top h2 {
+            font-size: 1.2rem;
+          }
+      
+          .footer-top form input,
+          .footer-top form button {
+            width: 100%;
+            max-width: none;
+          }
+      
+          .footer-bottom img {
+            width: 18px;
+          }
+      
+          .footer-bottom p {
+            font-size: 0.8rem;
+          }
+        }
+      
