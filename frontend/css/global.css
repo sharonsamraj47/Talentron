@@ -1,0 +1,411 @@
+.white-text {
+  color: #fff;
+}
+.grey-text {
+  color: #454545;
+}
+.blue-text {
+  color: #109bff;
+}
+@media (max-width: 1024px) {
+  /* below header - start */
+  .arrow-left,
+  .arrow-right {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding: 8px;
+  }
+  .arrow-left {
+    left: 15px;
+    top: 50%;
+  }
+  .arrow-right {
+    right: 15px;
+    top: 50%;
+  }
+  .image-wrapper img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* below header - end */
+
+  /* Our Training Process - start */
+
+  .custom-shape::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -24px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 3px 14px 25px;
+    border-color: transparent transparent transparent #006cbb;
+  }
+
+  /* Our Training Process - end */
+
+  
+}
+
+@media (min-width: 992px) {
+  /* Header */
+  .navbar-collapse {
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .title-text {
+    text-align: left !important;
+  }
+
+  .job-seeker-button{
+    display: block;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 20px; /* Add spacing from titles */
+    width: 111px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .mobile-image-container img {
+    /* Center the mobile image below the titles */
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100% !important;
+    max-width: 349px;
+    height: 50% !important;
+  }
+  .text-lg-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Header - end */
+
+  /* Talent Hiring process - start */
+
+  .arrow {
+    font-size: 70px;
+    margin-top: -15px;
+    margin-top: -75px;
+  }
+
+  /* Talent Hiring process - end */
+
+  /*footer - start */
+
+  /*footer - end */
+}
+
+@media (max-width: 768px) {
+  /* below header - start */
+  .arrow-left,
+  .arrow-right {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding: 6px;
+  }
+  .arrow-left {
+    left: 10px;
+    top: 40%;
+  }
+  .arrow-right {
+    right: 10px;
+    top: 40%;
+  }
+  .mobile-image-container {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .mobile-image-container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  .mobile-image-container {
+    position: relative;
+    z-index: 1000;
+  }
+  .scrollable-row2 .card img {
+    width: 50px;
+    height: 50px;
+  }
+  /* below header - end */
+
+  /* why client choose us - start */
+  .why-client-overlay-container .main-image {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+  }
+
+  .why-client-overlay-container .overlay-top-right {
+    top: 71%;
+    right: -2%;
+    width: 25%;
+  }
+
+  .why-client-overlay-container .overlay-bottom-right {
+    top: 0%;
+    left: 75%;
+    width: 20%;
+  }
+  /* why client choose us - end */
+
+  /* Talent Hiring process - start */
+
+  .process-container {
+    flex-direction: row;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .process-step img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .arrow {
+    font-size: 70px;
+    margin-top: -65px;
+  }
+  /* Talent Hiring process - end */
+
+  /* Video container - start */
+
+  .video-container {
+    padding-top: 50%;
+    max-height: 350px;
+  }
+
+  .play-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .play-button svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* Video container - end */
+
+  /* Our Training Process - start */
+
+  .training-container {
+    overflow-x: scroll;
+  }
+  .training-wrapper {
+    gap: 1.5rem;
+  }
+  .training-step {
+    min-width: 125px;
+    height: auto;
+  }
+ 
+   .custom-shape::after {
+    content: "";
+    position: absolute;
+    top: -0.5px;
+    right: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 3px 14px 25px;
+    border-color: transparent transparent transparent #006cbb;
+  }
+
+
+  /* Our Training Process - end */
+
+  /* why choose our training - start*/
+
+  .center-heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .center-heading h5 {
+    font-size: 1rem;
+  }
+
+  .overlay-container img:last-child {
+    top: 61%;
+    left: 1%;
+    width: 30%;
+  }
+
+  /* why choose our training - end*/
+
+  /* Footer */
+
+ 
+  .footer-top h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-bottom h4 {
+    font-size: 1.2rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.9rem;
+  }
+
+  .social-follow {
+    width: 20px;
+  }
+
+  /* Footer - end */
+}
+
+@media (max-width: 576px) {
+  /* why client choose is - start */
+
+  .why-client-overlay-container .main-image {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+  }
+
+  .why-client-overlay-container .overlay-top-right {
+    top: 75%;
+    right: 5%;
+    width: 20%;
+  }
+
+  .why-client-overlay-container .overlay-bottom-right {
+    top: 0%;
+    left: 75%;
+    width: 15%;
+  }
+
+  /* why client choose is - end */
+
+  /* Talent Hiring process - start */
+  .process-container {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  .process-step {
+    min-width: 100px;
+    text-align: center;
+  }
+
+  .process-step img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .arrow {
+    font-size: 70px;
+    margin-top: -10px;
+    margin-top: -75px;
+  }
+
+  /* Talent Hiring process - end */
+
+  /* our training process - start */
+  .training-container {
+    overflow-x: scroll;
+  }
+  .training-step {
+    min-width: 100px;
+  }
+  .training-step img {
+    max-width: 125px;
+    height: auto;
+  }
+  .line-circle {
+    position: relative;
+    width: 116%;
+    margin: 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+  }
+  .custom-shape::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 3px 14px 25px;
+    border-color: transparent transparent transparent #006cbb;
+  }
+  /* our training process - end */
+
+  /* why choose our training - start */
+
+  .overlay-container img:first-child {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+  }
+  .overlay-container img:last-child {
+    top: 76%;
+    left: 5%;
+    width: 20%;
+  }
+
+  /* why choose our training - end */
+
+  /* Footer - start */
+
+  .footer-top h2 {
+    font-size: 1.2rem;
+  }
+
+  .footer-top form input,
+  .footer-top form button {
+    width: 100%;
+    max-width: none;
+  }
+
+  .social-follow {
+    width: 18px;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+
+  /* Footer - end */
+}
+
+@media (max-width: 480px) {
+  .video-container {
+    padding-top: 60%;
+    max-height: 250px;
+  }
+
+  .play-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .play-button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+}
