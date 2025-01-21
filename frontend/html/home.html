@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Static Navbar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../css/home.css" rel="stylesheet" />
+    <link href="../css/global.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Header start -->
+
+    <header class="bg-light py-1">
+      <div class="m-1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid header-class">
+            <a href="#" class="navbar-brand d-none d-lg-block pe-5">
+              <img
+                src="../images/talentron_logo.png"
+                alt="Talentron Logo"
+                class="img-fluid desktop-logo-img"
+              />
+            </a>
+
+            <a href="#" class="navbar-brand d-block d-lg-none">
+              <img
+                src="../images\T-logo.png"
+                alt="Talentron Mobile Logo"
+                class="img-fluid mobile-logo"
+              />
+            </a>
+            <button
+              type="button"
+              class="navbar-toggler ms-auto"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active header-font-size"
+                  >Home</a
+                >
+                <a href="#" class="nav-item nav-link header-font-size"
+                  >Training Program's</a
+                >
+                <a href="#" class="nav-item nav-link header-font-size"
+                  >Training Partner's</a
+                >
+                <a href="#" class="nav-item nav-link header-font-size"
+                  >About Us</a
+                >
+                <a href="#" class="nav-item nav-link header-font-size"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Header End -->
+
+    <!-- job seeker - start -->
+
+    <div class="below-header gradient-bg text-white pt-2">
+      <!-- <div class="arrow-left me-3">&#8592;</div> -->
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <!-- Left Section -->
+          <div class="col-lg-6 text-start text-lg-start">
+            <h1 class="fw-bold title-text">Hi Candidate!</h1>
+            <h2 class="fw-bolder title-text blue-text">
+              Are you looking for a Job?
+            </h2>
+            <p class="title-subtext d-none d-lg-block">
+              Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+              used in laying out print, graphic or web designs.
+            </p>
+            <button class="btn btn-primary job-seeker-button">Job Seeker</button>
+          </div>
+
+          <!-- Right Section (Images) -->
+          <div class="col-lg-6 d-none d-lg-flex image-wrapper">
+            <div class="image-container">
+              <img src="../images/inner_image_1.png" alt="Image 1" />
+              <img src="../images/inner_image_2.png" alt="Image 2" />
+              <img src="../images/inner_image_3.png" alt="Image 3" />
+            </div>
+          </div>
+          <!-- <div class="arrow-right ms-5">&#8594;</div> -->
+        </div>
+
+        <!-- Mobile View (Single Image) -->
+        <div class="row d-lg-none text-center mt-4 mobile-image-container">
+          <img
+            src="../images/mobile_image_job_seeker.png"
+            alt="Mobile Image"
+            class="img-fluid mx-auto"
+          />
+        </div>
+      </div>
+
+      <div class="custom-container container bg-white mb-0 mt-0">
+        <div class="scrollable-row scrollable-row2 ms-2">
+          <div class="card">
+            <img src="../images\full_stack.png" alt="Full Stack Icon" />
+            <h5 class="scrollable-text pt-1">Full Stack Development</h5>
+          </div>
+          <div class="card">
+            <img src="../images\data.png" alt="Data Engineering Icon" />
+            <h5 class="scrollable-text pt-1">Data Engineering</h5>
+          </div>
+          <div class="card">
+            <img src="../images\front_end.png" alt="Front-end Icon" />
+            <h5 class="scrollable-text pt-1">Front-end Development</h5>
+          </div>
+          <div class="card">
+            <img src="../images\testing.png" alt="Software Testing Icon" />
+            <h5 class="scrollable-text pt-1">Software Testing</h5>
+          </div>
+          <div class="card">
+            <button class="circle-button">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+            <h5 class="scrollable-text pt-1">More Events</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- job seeker - End -->
+
+    <!-- Why Client Choose US - Start -->
+
+    <div class="container position-relative py-5">
+      <div class="center-heading">
+        <h2 class="headline">Why Client Choose Us</h2>
+        <h5 class="subtitle grey-text">Skill Development</h5>
+      </div>
+
+      <div class="row align-items-center">
+        <!-- Left Section -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="why-client-overlay-container">
+            <!-- Main Image -->
+            <img
+              src="../images\why client choose us.png"
+              alt="Client choose us"
+              class="main-image"
+            />
+
+            <!-- Top-right Image -->
+            <img
+              src="../images\8890 client.png"
+              alt="8890 client"
+              class="overlay-top-right"
+            />
+
+            <!-- Bottom-right Text Overlay -->
+            <img
+              src="../images/joining.png"
+              alt="Join"
+              class="overlay-bottom-right"
+            />
+          </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="col-lg-6">
+          <h4 class="fw-bold subheading">Talentron - Job portal</h4>
+          <p class="subtext">
+            Welcome to Talentron, where we're committed to empowering the next
+            generation of technology leaders. Founded by Solomon, whose
+            extensive 20-year career spanned various domains, Talentron was born
+            out of a passion for building high-performing teams and unlocking
+            their full potential.
+          </p>
+          <ul class="list-unstyled">
+            <li class="tick-mark points mb-2">
+              <img src="../images\teenyicons_tick-circle-solid.png" /> Hiring -
+              Better Decision Making.
+            </li>
+            <li class="tick-mark points mb-2">
+              <img src="../images\teenyicons_tick-circle-solid.png" /> Measure
+              Skill Development.
+            </li>
+            <li class="tick-mark points mb-2">
+              <img src="../images\teenyicons_tick-circle-solid.png" /> Increase
+              Revenue Growth.
+            </li>
+            <li class="tick-mark points mb-2">
+              <img src="../images\teenyicons_tick-circle-solid.png" /> High
+              Return on Investment.
+            </li>
+            <li class="tick-mark points mb-2">
+              <img src="../images\teenyicons_tick-circle-solid.png" /> Saves
+              Companies Productive Time.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="top-right-button">
+        <img src="../images/pad.png" alt="Icon" />
+      </button>
+    </div>
+
+    <!-- Why Client Choose US - End -->
+
+    <!-- Talent Hiring Process -->
+
+    <div class="footer-bottom bg-dark bg-gradient text-white pt-2 pb-4">
+      <div class="container text-center mt-5">
+        <h2 class="headline white-text">Talent Hiring Process</h2>
+        <p class="subtitle white-text">
+          Placement in Premium Companies
+        </p>
+
+        <div class="process-container">
+          <div class="process-step">
+            <img src="../images/talent01.png" alt="Step 1" />
+            <p class="hiring-process-index">01</p>
+            <p class="process-text">Get Hiring Plan</p>
+            <p class="process-text">from Clients</p>
+          </div>
+
+          <img class="arrow" src="../images/Arrow 33.png" alt="arrow" />
+
+          <div class="process-step">
+            <img src="../images/talent02.png" alt="Step 2" />
+            <p class="hiring-process-index">02</p>
+            <p class="process-text">
+              Frequent <br />
+              Collaboration
+            </p>
+          </div>
+
+          <img class="arrow" src="../images/Arrow 33.png" alt="arrow" />
+
+          <div class="process-step">
+            <img src="../images/talent03.png" alt="Step 3" />
+            <p class="hiring-process-index">03</p>
+            <p class="process-text">Initial Screening &</p>
+            <p class="process-text">Facilitating Interview</p>
+          </div>
+
+          <img class="arrow" src="../images/Arrow 33.png" alt="arrow" />
+
+          <div class="process-step">
+            <img src="../images/talent04.png" alt="Step 4" />
+            <p class="hiring-process-index">04</p>
+            <p class="process-text">Get Commitment</p>
+            <p class="process-text">from Candidate</p>
+          </div>
+
+          <img class="arrow" src="../images/Arrow 33.png" alt="arrow" />
+
+          <div class="process-step">
+            <img src="../images/talent05.png" alt="Step 5" />
+            <p class="hiring-process-index">05</p>
+            <p class="process-text pb-3">Hire Candidate</p>
+          </div>
+
+          <img class="arrow" src="../images/Arrow 33.png" alt="arrow" />
+
+          <div class="process-step">
+            <img src="../images/talent06.png" alt="Step 6" />
+            <p class="hiring-process-index">06</p>
+            <p class="process-text">Onboarding</p>
+            <p class="process-text">Process</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--End-->
+
+    <!--Video container - start -->
+
+    <div class="container mt-5">
+      <!-- Heading -->
+      <div class="heading">
+        <h1 class="headline">Explore Talentron</h1>
+        <p class="subtitle grey-text">
+          Learn Skills with Experienced Trainers
+        </p>
+      </div>
+
+      <!-- Responsive Video Container -->
+      <div class="video-container mb-5">
+        <img
+          src="../images\why choose our trainging.png"
+          alt="Video Thumbnail"
+        />
+        <div class="play-button" onclick="playVideo()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
+        <iframe
+          id="video"
+          src=""
+          allowfullscreen
+          style="display: none"
+        ></iframe>
+      </div>
+    </div>
+    <!--Video container - End -->
+
+    <!-- Our training Process - start -->
+
+    <div class="training-section py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold headline">Our Training Process</h2>
+        <p class="subtitle grey-text">Professional Growth</p>
+
+        <div class="training-container position-relative">
+          <div class="training-wrapper d-flex align-items-center">
+            <div class="training-process">
+              <img src="../images/training01.png" alt="Step 1" />
+              <div class="line-circle mt-1">
+                <div class="circle"></div>
+              </div>
+              <p class="below-line-number pt-2">01</p>
+              <div class="custom-shape">1-2 Weeks</div>
+              <p class="training-process">Assess</p>
+              <p class="pb-0 training-subpoints">
+                Assess Training needs<br />Prepare Resources<br />Prepare
+                Resources
+              </p>
+            </div>
+
+            <div class="training-process">
+              <img src="../images/training02.png" alt="Step 2" />
+              <div class="line-circle mt-1">
+                <div class="circle"></div>
+              </div>
+              <p class="below-line-number pt-2">02</p>
+              <div class="custom-shape">2-3 Weeks</div>
+              <p class="training-process">Training Readiness</p>
+              <p class="pb-0 training-subpoints">
+                Candidate Screening<br />Get Commitment<br />Design Training
+                Program
+              </p>
+            </div>
+
+            <div class="training-process">
+              <img src="../images/training03.png" alt="Step 3" />
+              <div class="line-circle mt-1">
+                <div class="circle"></div>
+              </div>
+              <p class="below-line-number pt-2">03</p>
+              <div class="custom-shape">2-3 Months</div>
+              <p class="training-process">Delivery Training</p>
+              <p class="pb-0 training-subpoints">
+                Intense Training<br />Facilitate Cloud Eco-System<br />Periodic
+                Assessment
+              </p>
+            </div>
+
+            <div class="training-process">
+              <img src="../images/training04.png" alt="Step 4" />
+              <div class="line-circle mt-1">
+                <div class="circle"></div>
+              </div>
+              <p class="below-line-number pt-2">04</p>
+              <div class="custom-shape">1-2 Months</div>
+              <p class="training-process">Real-Time Projects</p>
+              <p class="pb-0 training-subpoints">
+                Provide Technical Guidance<br />Monitor Progress<br />Periodic
+                Assessment
+              </p>
+            </div>
+
+            <div class="training-process">
+              <img src="../images/training05.png" alt="Step 5" />
+              <div class="line-circle mt-1">
+                <div class="circle"></div>
+              </div>
+              <p class="below-line-number pt-2">05</p>
+              <div class="custom-shape">1-2 Weeks</div>
+              <p class="training-process">VAT & Get Certified</p>
+              <p class="pb-0 training-subpoints">
+                Soft Skill Training<br />Corporate Culture Training<br />Mentor
+                through Experts
+              </p>
+            </div>
+
+            <div class="training-process">
+              <img src="../images/training06.png" alt="Step 6" />
+              <div class="line-circle mt-1">
+                <div class="circle"></div>
+              </div>
+              <p class="below-line-number pt-2">06</p>
+              <div class="custom-shape">1-3 Months</div>
+              <p class="training-process">Engage Partners</p>
+              <p class="pb-0 training-subpoints">
+                Conduct Assessments<br />Arrange Interviews<br />Onboard
+                Candidate
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our training Process - end -->
+
+    <!-- Why choose our training - start -->
+
+    <div class="container py-5">
+      <!-- Centered Heading Section -->
+      <div class="center-heading">
+        <h2 class="headline">Why Choose Our Training</h2>
+        <h5 class="subtitle grey-text">
+          Working on Real Time Projects
+        </h5>
+      </div>
+
+      <div class="row align-items-center">
+        <!-- Left Section -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h4 class="fw-bold subheading">Talentron - Our Training</h4>
+          <p class="subtext">
+            At Talentron, we believe in providing a personalized training
+            experience to each individual. We offer special attention and
+            mentorship to help you sharpen your technical skills, provide career
+            guidance, and offer live project exposure to emerging technologies.
+          </p>
+          <ul class="list-unstyled">
+            <li class="tick-mark points mb-2">
+              <img src="../images\teenyicons_tick-circle-solid.png" />
+              Personalized Training Experience.
+            </li>
+            <li class="tick-mark points mb-2">
+              <img src="../images\teenyicons_tick-circle-solid.png" /> Real Time
+              Projects.
+            </li>
+            <li class="tick-mark points mb-2">
+              <img src="../images\teenyicons_tick-circle-solid.png" /> 100%
+              Guaranteed Job.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Section -->
+        <div class="col-lg-6">
+          <div class="overlay-container">
+            <img src="../images\why choose our trainging.png" alt="Laptop" />
+            <img src="../images\165+.png" alt="165+ Projects" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why choose our training - End -->
+
+    <!-- Footer start -->
+
+    <footer>
+      <div
+        class="footer-top text-center bg-primary bg-gradient text-white pt-4 pb-4"
+      >
+        <h2 class="headline white-text">
+          Don't Miss Out, Develop Your Coding Skills with Talentron
+        </h2>
+        <p class="subtitle white-text">Advance Training Session</p>
+        <form
+          id="form"
+          class="row g-2 justify-content-center align-items-center mt-4 custom-form"
+        >
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div class="col-md-4">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your Mail ID"
+              required
+            />
+          </div>
+          <div class="col-md-2">
+            <button type="submit" class="btn btn-sm btn-dark custom-submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="footer-bottom bg-dark bg-gradient text-white pt-4 pb-4">
+        <div class="container">
+          <div class="row">
+            <!-- Left Section -->
+            <div class="col-md-4 text-center text-md-start">
+              <h4 class="fw-bold">
+                <img
+                  src="../images\Rectangle 2.png"
+                  alt="square_color"
+                  class="img-fluid me-1"
+                />Talentron
+              </h4>
+              <p class="footer-text">
+                Founded by Solomon, whose extensive 20-year career spanned
+                various domains, Talentron was born out of a passion for
+                building high-performing teams and unlocking their full
+                potential.
+              </p>
+              <p class="footer-tele-email">
+                <img
+                  src="../images/ic_baseline-phone.png"
+                  alt="phone"
+                  class="img-fluid me-1"
+                />
+                +91-1234567890 / 9087654321<br />
+                <img
+                  src="../images/fluent_mail-20-filled.png"
+                  alt="mail"
+                  class="img-fluid me-1"
+                />
+                talentron2024@gmail.com
+              </p>
+            </div>
+
+            <!-- Right Section -->
+            <div class="col-md-8">
+              <div class="row text-center text-md-start">
+                <!-- Column 1 -->
+                <div class="col-6 col-md-3 mb-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Home</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Training Programs</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Training Partners</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >About Us</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- Column 2 -->
+                <div class="col-6 col-md-3 mb-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Software Developer</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Full Stack Developer</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Frontend Developer</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Automation Tester</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Manual Tester</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- Column 3 -->
+                <div class="col-6 col-md-3 mb-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Features</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Clients</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Training & Support</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Help Center</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Contact us for Help</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- Column 4 -->
+                <div class="col-6 col-md-3 mb-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Company</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Pricing</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Meet the Team</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white footer-text pb-2"
+                        >Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="border-secondary" />
+
+          <!-- Footer Bottom Section -->
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start"
+          >
+            <!-- Follow Us Section -->
+            <div class="d-flex align-items-center mb-3 mb-md-0">
+              <h6 class="m-0 me-2 d-none d-md-block">Follow Us</h6>
+              <div class="social-icons d-flex">
+                <a href="#" class="me-2"
+                  ><img
+                    class="social follow"
+                    src="../images/ri_instagram-fill.png"
+                    alt="instagram"
+                /></a>
+                <a href="#" class="me-2"
+                  ><img
+                    class="social follow"
+                    src="../images/ic_baseline-facebook.png"
+                    alt="facebook"
+                /></a>
+                <a href="#" class="me-2"
+                  ><img
+                    class="social follow"
+                    src="../images/Symbol.png"
+                    alt="youtube"
+                /></a>
+                <a href="#" class="me-2"
+                  ><img
+                    class="social follow"
+                    src="../images/linkedin.png"
+                    alt="linkedin"
+                /></a>
+                <a href="#" class="me-2"
+                  ><img
+                    class="social follow"
+                    src="../images/mdi_twitter.png"
+                    alt="twitter"
+                /></a>
+              </div>
+            </div>
+
+            <p class="m-0">© 2024 Talentron. All rights reserved</p>
+
+            <a href="#" class="text-decoration-none text-white"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <button
+          onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
+          class="scroll-to-top-btn"
+          id="scrollToTopBtn"
+        >
+          ↑
+        </button>
+        <script>
+          const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+          window.addEventListener("scroll", () => {
+            // Calculate 25% of the page height
+            const scrollThreshold =
+              document.documentElement.scrollHeight * 0.25;
+
+            // Check the current scroll position
+            if (window.scrollY > scrollThreshold) {
+              scrollToTopBtn.classList.add("show");
+            } else {
+              scrollToTopBtn.classList.remove("show");
+            }
+          });
+        </script>
+      </div>
+    </footer>
+
+    <!-- footer end -->
+
+    <!-- Modal Template -->
+    <div
+      class="modal fade"
+      id="responseModal"
+      tabindex="-1"
+      aria-labelledby="responseModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="responseModalLabel">Message</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="modalMessage">
+            <!-- Dynamic Message Will Appear Here -->
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function playVideo() {
+        const video = document.getElementById("video");
+        video.src = "../videos/5-second-video.mp4?autoplay=1&controls=0"; // Replace 'your-video-id' with actual ID
+        video.style.display = "block";
+        document.querySelector(".play-button").style.display = "none";
+      }
+    </script>
+
+    <script>
+      document
+        .getElementById("form")
+        .addEventListener("submit", async (event) => {
+          event.preventDefault();
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+
+          try {
+            const response = await fetch("/submit", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ name, email }),
+            });
+
+            const result = await response.json();
+            const modalMessage = document.getElementById("modalMessage");
+            const modalTitle = document.getElementById("responseModalLabel");
+            const modal = new bootstrap.Modal(
+              document.getElementById("responseModal")
+            );
+
+            if (result.success) {
+              modalTitle.textContent = "Success!";
+              modalMessage.textContent = "Successfully saved!";
+              modal.show();
+            } else if (result.message === "Email already exists") {
+              modalTitle.textContent = "Duplicate Entry";
+              modalMessage.textContent =
+                "The email already exists. Please use a different email.";
+              modal.show();
+            } else {
+              modalTitle.textContent = "Error";
+              modalMessage.textContent = "Failed to save. Try again!";
+              modal.show();
+            }
+          } catch (err) {
+            const modalMessage = document.getElementById("modalMessage");
+            const modalTitle = document.getElementById("responseModalLabel");
+            const modal = new bootstrap.Modal(
+              document.getElementById("responseModal")
+            );
+            modalTitle.textContent = "Error";
+            modalMessage.textContent = "Error: " + err.message;
+            modal.show();
+          }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
