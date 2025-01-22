@@ -1,45 +1,4 @@
-.header-class {
-  width: 1366px;
-  height: 70px;
-  top: 15px;
-  left: 83px;
-  gap: 0px;
-  opacity: 0px;
-}
-.header-font-size {
-  font-size: 14px !important;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
-}
-.desktop-logo-img {
-  width: 149.39px;
-  height: 40px;
-  top: 15px;
-  left: 83px;
-  gap: 0px;
-  opacity: 0px;
-}
-.navbar-collapse {
-  position: absolute;
-  right: 0;
-  top: 100%;
-  width: auto;
-  background-color: #f8f9fa;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1030;
-}
 
-.navbar-toggler {
-  z-index: 1031;
-}
-
-.custom-font {
-  font-family: "Montserrat", sans-serif;
-}
-
-.mobile-logo {
-  max-height: 35px;
-}
 
 .title-text {
   font-size: 34px;
@@ -51,6 +10,8 @@
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
 }
+
+/* below header - start */
 .job-seeker-button {
   width: 130px;
   height: 40px;
@@ -62,7 +23,7 @@
   text-decoration-skip-ink: none;
 }
 
-/* below header - start */
+
 .below-header {
   position: relative;
 }
@@ -598,69 +559,4 @@
 
 /* why choose our training - End*/
 
-/* Footer */
-.footer-bottom {
-  position: relative;
-}
 
-.footer-text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 17.07px;
-}
-.footer-tele-email {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14.63px;
-}
-
-.custom-submit {
-  width: 170px;
-  height: 40px;
-  top: 3543px;
-  left: 1113px;
-}
-.custom-font {
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-.custom-form input,
-.custom-form button {
-  height: 40px;
-}
-
-.custom-form {
-  max-width: 100%;
-  padding: 0 15px;
-}
-
-
-/* Scroll to top button */
-.scroll-to-top-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  font-size: 30px;
-  color: blue;
-  background-color: white;
-  border: none;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.scroll-to-top-btn.show {
-  opacity: 1;
-  visibility: visible;
-}
-/* End of scroll to top button */
