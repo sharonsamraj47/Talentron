@@ -1,3 +1,7 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css");
+
+
 .headline {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
@@ -37,6 +41,9 @@
   font-weight: 500 !important;
   color: #454545;
   line-height: 19.5px;
+}
+.indent{
+    padding-left: 18px;
 }
 
 .white-text {
@@ -221,7 +228,7 @@
 
   .explore-talentron-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start !important;
     align-items: center;
     flex-wrap: nowrap;
   }
@@ -236,7 +243,7 @@
 
   .custom-card {
     max-width: 280px;
-    height: auto;
+    height: 300px !important;
   }
   .row {
     justify-content: space-between;
@@ -302,6 +309,17 @@
   /* Talent Hiring process - end */
 
   /* HomePage - End */
+
+  /* Training partner - start */
+
+  /* our compensation - start */
+
+  .custom-card {
+    max-width: 280px;
+    height: 380px !important;
+  }
+
+  /* Our compensation - end */
 }
 
 @media (max-width: 768px) {
@@ -504,7 +522,7 @@
     height: 100%;
   }
   .section-heading {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important; 
   }
   .section-paragraph {
     font-size: 0.9rem;
@@ -524,7 +542,7 @@
 
   .custom-card {
     max-width: 280px;
-    height: auto;
+    height: auto !important;
   }
   .row {
     justify-content: space-between;
@@ -538,8 +556,8 @@
     text-align: center;
   }
   .custom-section img {
-    width: 40px;
-    height: 40px;
+  width: 40px !important;
+    height: 40px !important;
     margin-bottom: 10px;
   }
   .custom-section img:first-child {
@@ -738,7 +756,22 @@
 }
 
 @media (max-width: 480px) {
+
+  .form-button {
+    display: none;
+  }
+
   /* HomePage - start */
+
+  /*title head */
+
+  .section-paragraph {
+    font-size: 0.8rem !important;
+    width: 240px !important;
+    height: auto;
+  }
+
+  /*tile head - end */
 
   /* video container - start */
 
@@ -791,13 +824,12 @@
   font-size: 25px;
   padding-bottom: 5px;
   color: blue;
-  background-color: white;
+  background-color: transparent;
   border: none;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   opacity: 0;

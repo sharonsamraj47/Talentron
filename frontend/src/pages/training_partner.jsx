@@ -1,0 +1,379 @@
+import React, { useState } from 'react';
+import Head from "../components/Head";
+import FormButton from "../components/form_button";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import FAQItem from '../components/FAQitems';
+
+
+
+const TrainingPartnerPage = () => {
+
+  const [collapsed, setCollapsed] = useState([true, true, true, true, true]);
+
+  const toggleCollapse = (index) => {
+    setCollapsed((prev) => {
+      const newCollapsed = [...prev];
+      newCollapsed[index] = !newCollapsed[index];
+      return newCollapsed;
+    });
+  };
+
+  const faqData = [
+    {
+      question: "What qualifications must one meet to enrol in the training program?",
+      answer: "You should have the basic knowledge of any programming language and an attitude of passionate learning."
+    },
+    {
+      question: "What is the course fee for the training program?",
+      answer: "The teaching methodology includes hands-on practice, live projects, and mentorship from industry experts."
+    },
+    {
+      question: "What courses are available for the upcoming training program?",
+      answer: "The teaching methodology includes hands-on practice, live projects, and mentorship from industry experts."
+    },
+    {
+      question: "What teaching methodology is being employed?",
+      answer: "The teaching methodology includes hands-on practice, live projects, and mentorship from industry experts."
+    },
+    {
+      question: "Can a homemaker with an extended career break attend the training program?",
+      answer: "The teaching methodology includes hands-on practice, live projects, and mentorship from industry experts."
+    }
+  ];
+
+
+    return (
+        <>
+        <Head title="Training Partner" cssFile="training_partner.css" />
+        <main>
+          <FormButton/>
+    {/* title head - start */}
+    <div className="head-container">
+      <div className="dark-background">
+        <div className="top-banner">
+          <i><img src="src/assets/images/training_partner_img/partners.png" /></i>
+          <span className="partners-text-style">Partners</span>
+        </div>
+        <h1 className="section-heading">Hi Training Partner!</h1>
+        <h1 className="section-heading blue-text">
+          You have enthusiastic in Training?
+        </h1>
+        <p className="section-paragraph">
+          Where you can share your knowledge and technical skills, connect with
+          professionals, enrich careers, and earn a substantial income!
+        </p>
+      </div>
+    </div>
+
+    {/* title head - End  */} 
+
+    {/* Partners - start */} 
+
+    <div className="container my-4">
+      <div className="scroll-container">
+        <div className="image-container">
+          <img
+            src="src/assets/images/training_partner_img/partner_1.png"
+            className="img-fluid"
+            alt="Image 1"
+          />
+        </div>
+        <div className="image-container">
+          <img
+            src="src/assets/images/training_partner_img/partner_2.png"
+            className="img-fluid"
+            alt="Image 2"
+          />
+        </div>
+        <div className="image-container">
+          <img
+            src="src/assets/images/training_partner_img/partner_3.png"
+            className="img-fluid"
+            alt="Image 3"
+          />
+        </div>
+        <div className="image-container">
+          <img
+            src="src/assets/images/training_partner_img/partner_4.png"
+            className="img-fluid"
+            alt="Image 4"
+          />
+        </div>
+        <div className="image-container">
+          <img
+            src="src/assets/images/training_partner_img/partner_5.png"
+            className="img-fluid"
+            alt="Image 5"
+          />
+        </div>
+        <div className="image-container">
+          <img
+            src="src/assets/images/training_partner_img/partner_6.png"
+            className="img-fluid"
+            alt="Image 6"
+          />
+        </div>
+      </div>
+    </div>
+
+    {/* Partners - end */} 
+
+    {/* Explore Talentron Training Community - start */}
+    <div className="explore-talentron-background bg-gradient pt-3 pb-3">
+      <div className="container position-relative py-5">
+        <div className="center-heading">
+          <h2 className="headline">Explore Talentron Training Community</h2>
+          <h5 className="subtitle grey-text">Connect With Professionals</h5>
+        </div>
+
+        <div className="row align-items-center">
+          {/* Left Section */} 
+          <div className="col-lg-6 mb-4 mb-lg-0">
+            <div className="why-client-overlay-container">
+              {/* Main Image */}
+              <img
+                src="src/assets/images/training_partner_img/explore talentron.png"
+                alt="Client choose us"
+                className="main-image"
+              />
+
+              {/* bottom-right Image Overlay */} 
+              <img
+                src="src/assets/images/training_partner_img/900+.png"
+                alt="8890 client"
+                className="overlay-top-right"
+              />
+
+              {/* top-right Text Overlay */}
+              <img
+                src="src/assets/images/joining.png"
+                alt="Join"
+                className="overlay-bottom-right"
+              />
+            </div>
+          </div>
+
+          {/* Right Section */} 
+          <div className="col-lg-6">
+            <h4 className="fw-bold subheading">Build Global Training Community</h4>
+            <p className="subtext">
+              At Talentron, our constant endeavor is to create a network of
+              world-className trainers and industry experts who, in turn, create
+              high-quality courseware that resonates with professionals
+              globally, across domains such as,
+            </p>
+            <div className="points-container">
+              <div className="point-row">
+                <div className="point-item">
+                  <img src="src/assets/images/teenyicons_tick-circle-solid.png" />
+                  Full-stack Development.
+                </div>
+                <div className="point-item">
+                  <img src="src/assets/images/teenyicons_tick-circle-solid.png" /> Dev
+                  Ops.
+                </div>
+              </div>
+              <div className="point-row">
+                <div className="point-item">
+                  <img src="src/assets/images/teenyicons_tick-circle-solid.png" />
+                  Front-end Development.
+                </div>
+                <div className="point-item">
+                  <img src="src/assets/images/teenyicons_tick-circle-solid.png" /> API
+                  Development.
+                </div>
+              </div>
+              <div className="point-row">
+                <div className="point-item">
+                  <img src="src/assets/images/teenyicons_tick-circle-solid.png" /> Date
+                  Engineering.
+                </div>
+                <div className="point-item">
+                  <img src="src/assets/images/teenyicons_tick-circle-solid.png" />
+                  Database Design.
+                </div>
+              </div>
+              <div className="point-row">
+                <div className="point-item">
+                  <img src="src/assets/images/teenyicons_tick-circle-solid.png" />
+                  Software Testing.
+                </div>
+                <div className="point-item">
+                  <img src="src/assets/images/teenyicons_tick-circle-solid.png" /> Cloud
+                  Computing.
+                </div>
+              </div>
+            </div>
+            <p className="subtext mt-2">
+              The material you produce will be used to train professionals
+              worldwide, leading to increased visibility, a larger audience for
+              your content, and the opportunity to become part of an elite
+              international training community!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="footer-bottom bg-dark bg-gradient text-white pt-3 pb-3">
+      <div className="explore-talentron-container">
+        <div className="card">
+          <div className="card-body">
+            <img
+              src="src/assets/images/training_partner_img/professional training.png"
+              alt="Icon"
+              className="mb-3 ms-5 mt-3"
+            />
+            <h5 className="card-title">Professional Training</h5>
+          </div>
+        </div>
+        <div className="card">
+          <div className="card-body">
+            <img
+              src="src/assets/images/training_partner_img/collaborate peers.png"
+              alt="Icon"
+              className="mb-3 ms-5 mt-3"
+            />
+            <h5 className="card-title">Collaborate Peers</h5>
+          </div>
+        </div>
+        <div className="card">
+          <div className="card-body">
+            <img
+              src="src/assets/images/training_partner_img/continous learning.png"
+              alt="Icon"
+              className="mb-3 ms-5 mt-3"
+            />
+            <h5 className="card-title">Continuous Learning</h5>
+          </div>
+        </div>
+        <div className="card">
+          <div className="card-body">
+            <img
+              src="src/assets/images/training_partner_img/adaptation.png"
+              alt="Icon"
+              className="mb-3 ms-5 mt-3"
+            />
+            <h5 className="card-title">Adaptation</h5>
+          </div>
+        </div>
+        <div className="card">
+          <div className="card-body">
+            <img
+              src="src/assets/images/training_partner_img/experienced mentors.png"
+              alt="Icon"
+              className="mb-3 ms-5 mt-3 "
+            />
+            <h5 className="card-title">Experienced Mentors</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Explore Talentron Training Community - end */}
+
+    {/* Our Compensation - start */} 
+
+    <div className="container text-center my-5">
+      <h2 className="headline">Our Compensation</h2>
+      <p className="subtitle">Substantial Income</p>
+      <div className="row mt-4 justify-content-center">
+        {/* Box 1 */}  
+        <div className="col-md-4 col-lg-4 d-flex justify-content-center">
+          <div className="custom-card">
+            <div className="icon-circle mb-3">
+              <i className="fas fa-circle"></i>
+            </div>
+            <h5 className="compensation-title">Recognition</h5>
+            <p className="compensation-paragraph">
+              Recognizing the
+              <b>importance of fair and flexible compensation</b> aligning with
+              your training business requirement.
+            </p>
+          </div>
+        </div>
+        {/* Box 2 */} 
+        <div className="col-md-4 col-lg-4 d-flex justify-content-center">
+          <div className="custom-card">
+            <div className="icon-circle mb-3">
+              <i
+                ><img
+                  src="src/assets/images/training_partner_img/mdi_user-star.png"
+                  alt="mdi_user-Icon"
+                  className="mb-1 me-1"
+              /></i>
+            </div>
+            <h5 className="compensation-title">Utilization</h5>
+            <p className="compensation-paragraph">
+              At Talentron, we truly appreciate the significance of your time
+              and dedication. We wholeheartedly embrace transparency as a
+              guiding force that
+              <b> defines and shapes our commitment to stakeholders.</b>
+            </p>
+          </div>
+        </div>
+        {/* Box 3 */} 
+        <div className="col-md-4 col-lg-4 d-flex justify-content-center">
+          <div className="custom-card">
+            <div className="icon-circle mb-3">
+              <i
+                ><img
+                  src="src/assets/images/training_partner_img/streamline_bag-dollar-solid.png"
+                  alt="bag-dollar-Icon"
+                  className="mb-1"
+              /></i>
+            </div>
+            <h5 className="compensation-title">Compensation</h5>
+            <p className="compensation-paragraph">
+              Through our revenue-sharing model, you have the opportunity to
+              <b> earn a substantial income every month.</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="container my-4">
+      <div className="custom-section">
+        <img
+          src="src/assets/images/training_partner_img/money-bag 2.png"
+          alt="Left Icon"
+          className="ms-4"
+        />
+        <p className="below-compensation">
+          You have the opportunity to earn a substantial income every month.
+        </p>
+        <img
+          src="src/assets/images/training_partner_img/money 1.png"
+          alt="Right Icon"
+          className="me-4"
+        />
+      </div>
+    </div>
+
+    {/* Our Compensation - end */} 
+
+    {/* FAQ-section - start     */} 
+
+    <div className="container my-5">
+      <h2 className="headline">Frequently Asked Questions</h2>
+      <div className="accordion">
+        {faqData.map((faq, index) => (
+          <FAQItem
+            key={index}
+            question={faq.question}
+            answer={faq.answer}
+            index={index}
+            toggleCollapse={toggleCollapse}
+            collapsed={collapsed}
+          />
+        ))}
+      </div>
+    </div>
+    </main>
+</>
+
+    );
+};
+
+export default TrainingPartnerPage;

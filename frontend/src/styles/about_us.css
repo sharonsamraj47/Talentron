@@ -2,7 +2,7 @@
 
 .head-container {
     position: relative;
-    background: url("../images/about_us_img/aboutus_head.png") no-repeat
+    background: url("../assets/images/about_us_img/aboutus_head.png") no-repeat
       center center/cover;
     height: 280px;
     display: flex;
@@ -105,6 +105,25 @@
   top: 72%;
   right: -8%;
 }
+.founder-image-section{
+  flex-shrink: 0;
+}
+.founder-text-content{
+  flex: 1;
+}
+
+.linkedIn-box{
+  width: 100%; 
+  border-left: 5px solid #0077b5;
+}
+.LinkedIn-img{
+  flex-shrink: 0; 
+  margin-right: 10px;
+}
+.LinkedIn-img img{
+  height: 40px;
+}
+
 @media (max-width: 1400px){
   .welcome-to-talentron-overlay-container .main-image {
     width: 90%;
@@ -341,7 +360,7 @@ text-decoration-skip-ink: none;
 
 .our-mission-vision-container {
   position: relative;
-  background: url("../images/about_us_img/Our_mission_and_Vision.png") no-repeat center center/cover;
+  background: url("../assets/images/about_us_img/Our_mission_and_Vision.png") no-repeat center center/cover;
   height: auto; 
   display: flex;
   justify-content: center;

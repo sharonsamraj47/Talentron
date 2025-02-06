@@ -1,8 +1,10 @@
+@import url("bootstrap/dist/css/bootstrap.min.css");
+
 /*title head - start */
 
 .head-container {
   position: relative;
-  background: url("../images/training_partner_img/head_image.png") no-repeat
+  background: url("../assets/images/training_partner_img/head_image.png") no-repeat
     center center/cover;
   height: 280px;
   display: flex;
@@ -117,7 +119,6 @@
   left: 70%;
   border-radius: 4px 0 0 0;
 }
-/* explore talentron training community - start */
 .explore-talentron-background {
   position: relative;
   background-color: #ebf0f5;
@@ -129,6 +130,8 @@
   gap: 1.5rem;
   overflow-x: auto;
   padding: 1.5rem 0;
+  margin-left: 10px;
+  margin-right: 10px;
   white-space: nowrap;
   justify-content: center;
   scroll-snap-type: x mandatory;
@@ -152,6 +155,10 @@
   border-radius: 8px 8px 8px 8px;
   border: 1px 1px 1px 1px;
 }
+.card-body{
+  padding: 1rem 2rem;
+}
+
 .card-title {
   color: black;
   justify-content: center;
@@ -190,7 +197,7 @@
   flex: 1;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 500 !important;
   color: #454545;
   line-height: 19.5px;
 }
@@ -246,7 +253,7 @@
   margin: 10px auto;
   width: 100%;
   max-width: 380px;
-  height: 230px;
+  height: auto !important;
 }
 
 .below-compensation {
@@ -310,7 +317,7 @@
 .accordion-button::after {
   color: black;
   font-family: "Font Awesome 5 Free";
-  content: "\f067"; /* Plus icon */
+  content: "\f068"; /* Minus icon */
   font-weight: 900;
   position: absolute;
   right: 10px;
@@ -320,7 +327,7 @@
 
 .accordion-button.collapsed::after {
   background-image: none;
-  content: "\f068"; /* Minus icon */
+  content: "\f067"; /* Plus icon */
 }
 
 .accordion-button::before {
@@ -331,15 +338,6 @@
   background-image: none;
 }
 
-.faq-answer {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  display: none;
-}
-
 .accordion-button.collapsed .faq-answer {
   color: black;
   display: block;
@@ -348,6 +346,15 @@
   color: #000000;
   background-color: #ffffff;
   box-shadow: none;
+}
+
+.faq-answer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: none;
 }
 
 /* FAQ - end */
