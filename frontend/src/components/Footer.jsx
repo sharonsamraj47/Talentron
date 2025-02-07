@@ -30,7 +30,7 @@ const Footer = () => {
               <img
                   src="src/assets/images/location.png"
                   alt="location"
-                  className="img-fluid me-1"
+                  className="img-fluid ms-1 me-2"
                 />
                 Level 5, Tamarai Tech Park, <br/>
                 <span className="indent">S.P.Plot, No. 16-19, Inner Ring Rd, Guindy,</span><br/>

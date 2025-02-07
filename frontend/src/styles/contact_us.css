@@ -103,7 +103,16 @@
     font-weight: 400;
     line-height: 17.07px;
     text-align: left;
-    text-underline-position: from-font;
+    margin-top: -20px;
+   
+  }
+
+  .arrow-icon {
+    font-size: 38px;
+    color: #575757;
+    margin-left: 10px;
+    position: relative;
+    top: -22px;
   }
 
   .icon-circle-1 {
@@ -158,8 +167,9 @@
     text-align: left;
     margin: 10px auto;
     width: 100%;
-    max-width: 270px;
+    max-width: 370px;
     height: 134px;
+    
   }
   .Contact-Email-custom-card-2 {
     border: 1px solid #FF2934;
@@ -169,7 +179,7 @@
     text-align: left;
     margin: 10px auto;
     width: 100%;
-    max-width: 270px;
+    max-width: 370px;
     height: 134px;
   }
   .Contact-Email-custom-card-3 {
@@ -180,7 +190,7 @@
     text-align: left;
     margin: 10px auto;
     width: 100%;
-    max-width: 270px;
+    max-width: 370px;
     height: 134px;
   }
   .Contact-Email-custom-card-4 {
@@ -191,29 +201,49 @@
     text-align: left;
     margin: 10px auto;
     width: 100%;
-    max-width: 270px;
+    max-width: 370px;
     height: 134px;
   }
-  .Contact-Email-text::after {
-    content: "→"; /* Unicode arrow */
-    font-size: 20px;
-    margin-left: 50px; 
-    color: #000; 
-    vertical-align: right;
-  }
- 
   @media (max-width: 1200px) {
     .Contact-Email-custom-card-1, .Contact-Email-custom-card-2, .Contact-Email-custom-card-3, .Contact-Email-custom-card-4 {
-      max-width: 230px;
-      height: auto;
+      max-width: 540px;
+      height: 134px;
     }   
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .col-lg-3 {
+      flex: 0 0 50%; /* Ensure two boxes per row */
+      max-width: 50%;
+    }
+    .arrow-icon{
+      margin-bottom: 0px;
+    }
   }
 
   @media (max-width: 768px){
     .Contact-Email-custom-card-1, .Contact-Email-custom-card-2, .Contact-Email-custom-card-3, .Contact-Email-custom-card-4 {
       max-width: 580px;
-      height: auto;
-    }   
+      padding: 15px;
+      height: 134px;
+    } 
+  
+    .Contact-Email-text {
+      font-size: 16px;
+      margin-top: -20px;
+    }
+  
+    .arrow-icon {
+      font-size: 36px;
+      margin-top: 0px;
+    }  
+    .col-lg-3,
+    .col-md-6,
+    .col-sm-12 {
+      flex: 0 0 100%; /* Full width for each box */
+      max-width: 100%;
+    } 
   }
 
   /* Email ids - end */
