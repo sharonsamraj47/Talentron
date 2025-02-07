@@ -68,7 +68,7 @@ const Header = () => {
                   About Us
                 </NavLink>
                 <NavLink
-                  to="/contact"
+                  to="/contact-us"
                   className={({ isActive }) =>
                     isActive ? "nav-item nav-link active header-font-size" : "nav-item nav-link header-font-size"
                   }
