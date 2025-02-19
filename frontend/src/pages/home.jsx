@@ -1,14 +1,13 @@
 import React from "react";
-import Head from "../components/Head";
 import VideoContainer from "../components/VideoContainer";
 import FormButton from "../components/form_button";
+import "../styles/global.css";
 
 
 const Home = () => {
   return (
     <>
-      <Head title="Talentron - Home" cssFile="home.css" />
-    
+
       <main>
      {/* job seeker - start */}
      <FormButton/>
@@ -364,7 +363,7 @@ const Home = () => {
 
         {/*  Right Section */} 
         <div className="col-lg-6">
-          <div className="overlay-container">
+          <div className="why-our-training-overlay-container">
             <img src="src/assets/images/why choose our trainging.png" alt="Laptop" />
             <img src="src/assets/images/165+.png" alt="165+ Projects" />
           </div>

@@ -1,6 +1,6 @@
 /*title head - start */
 
-.head-container {
+.contact-us-head-container {
     position: relative;
     background: url("../assets/images/contact_us/contact_us_head.png") no-repeat
       center center/cover;
@@ -13,73 +13,6 @@
     padding: 0;
     margin: 0;
   }
-  .dark-background {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 2rem;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .top-banner {
-    display: inline-flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0);
-    padding: 0.5rem 0.7rem;
-    border-radius: 30px;
-    margin-bottom: 1rem;
-    width: 120px;
-    height: 30px;
-    border: 2px solid rgb(153, 153, 153);
-  }
-  .top-banner i {
-    font-size: 12px;
-    margin-right: 0.5rem;
-    margin-bottom: 0.2rem;
-    padding-left: 17px;
-  }
-  .joinUs-text-style {
-    font-family: "Montserrat", sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    padding-left: 1px;
-  }
-  .section-heading {
-    font-family: "Montserrat", sans-serif;
-    font-size: 34px;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-  }
-  .Below-section-heading{
-    font-family: "Montserrat", sans-serif;
-    font-size: 34px;
-    font-weight: bold;
-    color: #006CBB;
-    text-shadow: #00000040;
-    margin: 0;
-    padding: 0;
-
-  }
-  .section-paragraph {
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    margin-top: 0.5rem;
-    margin: 0;
-    padding: 0;
-    width: 415px;
-    height: 51px;
-  }
-  @media (max-width: 768px) {
-    .Below-section-heading{
-      font-size: 24px;
-    }
-  }
-  
   /*title head - end */
 
   /* Email ids - start */

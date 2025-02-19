@@ -1,21 +1,20 @@
 import React from "react";
-import Head from "../components/Head";
 import FormButton from "../components/form_button";
+import "../styles/global.css";
 
 const AboutPage = () => {
   return (
     <>
-      <Head title="About Us" cssFile="about_us.css" />
       <main>
         <FormButton/>
         {/* title head - start */}
-        <div className="head-container">
+        <div className="about-us-head-container">
           <div className="dark-background">
             <div className="top-banner">
               <i>
                 <img src="src/assets/images/training_partner_img/partners.png" />
               </i>
-              <span className="partners-text-style">Who we are</span>
+              <span className="banner-text-style">Who we are</span>
             </div>
             <h1 className="section-heading">About us!</h1>
             <h1 className="Below-section-heading blue-text">Our Talentron</h1>
@@ -236,7 +235,7 @@ const AboutPage = () => {
                 <h5 className="mission-vision-title">Our Mission</h5>
                 <ul className="list-unstyled">
                   <li className="mission-vision-points mb-2">
-                    <img src="src/assets/images/about_us_img/white-tick.png" />
+                    <img src="src/assets/images/about_us_img/white-tick.png" />{" "}
                     <span>
                       Elevate our workforce by offering comprehensive training
                       in the latest technologies and associated ecosystems.

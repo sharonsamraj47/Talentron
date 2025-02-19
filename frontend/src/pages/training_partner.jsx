@@ -1,58 +1,22 @@
-import React, { useState } from 'react';
-import Head from "../components/Head";
+import React from 'react';
 import FormButton from "../components/form_button";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FAQItem from '../components/FAQitems';
-
+import "../styles/global.css";
 
 
 const TrainingPartnerPage = () => {
 
-  const [collapsed, setCollapsed] = useState([true, true, true, true, true]);
-
-  const toggleCollapse = (index) => {
-    setCollapsed((prev) => {
-      const newCollapsed = [...prev];
-      newCollapsed[index] = !newCollapsed[index];
-      return newCollapsed;
-    });
-  };
-
-  const faqData = [
-    {
-      question: "What qualifications must one meet to enrol in the training program?",
-      answer: "You should have the basic knowledge of any programming language and an attitude of passionate learning."
-    },
-    {
-      question: "What is the course fee for the training program?",
-      answer: "The teaching methodology includes hands-on practice, live projects, and mentorship from industry experts."
-    },
-    {
-      question: "What courses are available for the upcoming training program?",
-      answer: "The teaching methodology includes hands-on practice, live projects, and mentorship from industry experts."
-    },
-    {
-      question: "What teaching methodology is being employed?",
-      answer: "The teaching methodology includes hands-on practice, live projects, and mentorship from industry experts."
-    },
-    {
-      question: "Can a homemaker with an extended career break attend the training program?",
-      answer: "The teaching methodology includes hands-on practice, live projects, and mentorship from industry experts."
-    }
-  ];
-
-
     return (
         <>
-        <Head title="Training Partner" cssFile="training_partner.css" />
         <main>
           <FormButton/>
     {/* title head - start */}
-    <div className="head-container">
+    <div className="training-partner-head-container">
       <div className="dark-background">
         <div className="top-banner">
           <i><img src="src/assets/images/training_partner_img/partners.png" /></i>
-          <span className="partners-text-style">Partners</span>
+          <span className="banner-text-style">Partners</span>
         </div>
         <h1 className="section-heading">Hi Training Partner!</h1>
         <h1 className="section-heading blue-text">
@@ -70,43 +34,43 @@ const TrainingPartnerPage = () => {
     {/* Partners - start */} 
 
     <div className="container my-4">
-      <div className="scroll-container">
-        <div className="image-container">
+      <div className="partner-scroll-container">
+        <div className="partner-image-container">
           <img
             src="src/assets/images/training_partner_img/partner_1.png"
             className="img-fluid"
             alt="Image 1"
           />
         </div>
-        <div className="image-container">
+        <div className="partner-image-container">
           <img
             src="src/assets/images/training_partner_img/partner_2.png"
             className="img-fluid"
             alt="Image 2"
           />
         </div>
-        <div className="image-container">
+        <div className="partner-image-container">
           <img
             src="src/assets/images/training_partner_img/partner_3.png"
             className="img-fluid"
             alt="Image 3"
           />
         </div>
-        <div className="image-container">
+        <div className="partner-image-container">
           <img
             src="src/assets/images/training_partner_img/partner_4.png"
             className="img-fluid"
             alt="Image 4"
           />
         </div>
-        <div className="image-container">
+        <div className="partner-image-container">
           <img
             src="src/assets/images/training_partner_img/partner_5.png"
             className="img-fluid"
             alt="Image 5"
           />
         </div>
-        <div className="image-container">
+        <div className="partner-image-container">
           <img
             src="src/assets/images/training_partner_img/partner_6.png"
             className="img-fluid"
@@ -353,23 +317,11 @@ const TrainingPartnerPage = () => {
 
     {/* Our Compensation - end */} 
 
-    {/* FAQ-section - start     */} 
+    {/* FAQ-section - start */} 
 
-    <div className="container my-5">
-      <h2 className="headline">Frequently Asked Questions</h2>
-      <div className="accordion">
-        {faqData.map((faq, index) => (
-          <FAQItem
-            key={index}
-            question={faq.question}
-            answer={faq.answer}
-            index={index}
-            toggleCollapse={toggleCollapse}
-            collapsed={collapsed}
-          />
-        ))}
-      </div>
-    </div>
+    
+      <FAQItem/>
+    
     </main>
 </>
 

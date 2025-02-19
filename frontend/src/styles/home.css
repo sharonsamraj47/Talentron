@@ -68,11 +68,11 @@
 }
 
 .image-container img {
-  width: 150px;
-  height: auto;
+  width: 150px !important;
+  height: auto !important;
   border-radius: 50%;
-  margin: 5px;
-  border: transparent;
+  margin: 5px !important;
+  border: transparent !important;
 }
 
 .circle-button {
@@ -426,26 +426,26 @@
 
 /* why choose our training - start*/
 
-.overlay-container {
+.why-our-training-overlay-container {
   position: relative;
   width: 100%;
   max-width: 531px;
   margin: 0 auto;
 }
 
-.overlay-container img:first-child {
+.why-our-training-overlay-container img:first-child {
   width: 100%;
   height: auto;
   border: 2px solid #109bff;
   border-radius: 10px;
 }
 
-.overlay-container img:last-child {
+.why-our-training-overlay-container img:last-child {
   position: absolute;
   width: 30%;
   height: auto;
-  top: 71%;
-  left: -8%;
+  top: 69%;
+  left: -9%;
   border-radius: 4px 0px 0px 0px;
 }
 
