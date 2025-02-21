@@ -1,9 +1,43 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/global.css";
 import FooterForm from "./FooterForm";
 import ScrollToTopButton from "./ScrollToTopButton";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const goToHome = () => {
+    navigate("/");
+    setTimeout(() => {
+      window.scrollTo(0, 0); 
+    }, 100);
+  };
+  const goToTrainingPrograms = () => {
+    navigate("/training-program");
+    setTimeout(() => {
+      window.scrollTo(0, 0); 
+    }, 100);
+  };
+  const goToTrainingPartners = () => {
+    navigate("/training-partner");
+    setTimeout(() => {
+      window.scrollTo(0, 0); 
+    }, 100);
+  };
+  const goToAboutUs = () => {
+    navigate("/about-us");
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
+  };
+  const goToContactUs = () => {
+    navigate("/contact-us");
+    setTimeout(() => {
+      window.scrollTo(0, 0); 
+    }, 100);
+  };
+
   return (
     <footer>
       
@@ -57,29 +91,24 @@ const Footer = () => {
                 <div className="col-6 col-md-3 mb-3">
                   <ul className="list-unstyled">
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
-                        >Home</a
-                      >
+                    <button onClick={goToHome} className="nav-link text-white footer-text pb-3"
+                        >Home</button>
                     </li>
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
-                        >Training Programs</a
-                      >
+                    <button onClick={goToTrainingPrograms} className="nav-link text-white footer-text pb-3"
+                        >Training Programs</button>
                     </li>
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
-                        >Training Partners</a
-                      >
+                    <button onClick={goToTrainingPartners} className="nav-link text-white footer-text pb-3"
+                        >Training Partners</button>
                     </li>
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
-                        >About Us</a
-                      >
+                    <button onClick={goToAboutUs} className="nav-link text-white footer-text pb-3"
+                        >About Us</button>
                     </li>
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
-                        >Contact Us</a
-                      >
+                    <button onClick={goToContactUs} className="nav-link text-white footer-text pb-3"
+                        >Contact Us</button>
                     </li>
                   </ul>
                 </div>
@@ -87,27 +116,27 @@ const Footer = () => {
                 <div className="col-6 col-md-3 mb-3">
                   <ul className="list-unstyled">
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
+                      <a href="#" className="nav-link text-white footer-text pb-3"
                         >Software Developer</a
                       >
                     </li>
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
+                      <a href="#" className="nav-link text-white footer-text pb-3"
                         >Full Stack Developer</a
                       >
                     </li>
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
+                      <a href="#" className="nav-link text-white footer-text pb-3"
                         >Frontend Developer</a
                       >
                     </li>
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
+                      <a href="#" className="nav-link text-white footer-text pb-3"
                         >Automation Tester</a
                       >
                     </li>
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
+                      <a href="#" className="nav-link text-white footer-text pb-3"
                         >Manual Tester</a
                       >
                     </li>
@@ -117,27 +146,27 @@ const Footer = () => {
                 <div className="col-6 col-md-3 mb-3">
                   <ul className="list-unstyled">
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
+                      <a href="#" className="nav-link text-white footer-text pb-3"
                         >Features</a
                       >
                     </li>
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
+                      <a href="#" className="nav-link text-white footer-text pb-3"
                         >Clients</a
                       >
                     </li>
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
+                      <a href="#" className="nav-link text-white footer-text pb-3"
                         >Training & Support</a
                       >
                     </li>
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
+                      <a href="#" className="nav-link text-white footer-text pb-3"
                         >Help Center</a
                       >
                     </li>
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
+                      <a href="#" className="nav-link text-white footer-text pb-3"
                         >Contact us for Help</a
                       >
                     </li>
@@ -147,22 +176,22 @@ const Footer = () => {
                 <div className="col-6 col-md-3 mb-3">
                   <ul className="list-unstyled">
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
+                      <a href="#" className="nav-link text-white footer-text pb-3"
                         >Company</a
                       >
                     </li>
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
+                      <a href="#" className="nav-link text-white footer-text pb-3"
                         >Pricing</a
                       >
                     </li>
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
+                      <a href="#" className="nav-link text-white footer-text pb-3"
                         >Meet the Team</a
                       >
                     </li>
                     <li>
-                      <a href="#" className="nav-link text-white footer-text pb-2"
+                      <a href="#" className="nav-link text-white footer-text pb-3"
                         >Contact Us</a
                       >
                     </li>

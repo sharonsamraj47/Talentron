@@ -1,10 +1,102 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import VideoContainer from "../components/VideoContainer";
 import FormButton from "../components/form_button";
 import "../styles/global.css";
 
 
+const slides = [
+  {
+    id: 1,
+    content: (
+      <div className="row align-items-center">
+        {/* Left Section */}
+        <div className="col-lg-6 text-start text-lg-start">
+          <h1 className="fw-bold title-text">Hi Candidate!</h1>
+          <h2 className="fw-bolder title-text blue-text">Are you looking for a Job?</h2>
+          <p className="title-subtext d-none d-lg-block">
+            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+          </p>
+          <button className="btn btn-primary job-seeker-button">Job Seeker</button>
+        </div>
+        {/* Right Section (Images) */}
+        <div className="col-lg-6 d-none d-lg-flex image-wrapper">
+          <div className="image-container">
+            <div className="inner_image_overlay">
+              <img src="src/assets/images/outter_image_1.png" alt="Bottom layer Image 1" className="layer1"/>
+              <img src="src/assets/images/inner_image_1.png" alt="Image 1" className="layer2"/>
+            </div>
+            <div className="inner_image_overlay">
+              <img src="src/assets/images/outter_image_2.png" alt="Bottom layer Image 2" className="layer1"/>
+              <img src="src/assets/images/inner_image_2.png" alt="Image 2" className="layer2"/>
+            </div>
+            <div className="inner_image_overlay">
+              <img src="src/assets/images/outter_image_3.png" alt="Bottom layer Image 2" className="layer1"/>
+              <img src="src/assets/images/inner_image_3.png" alt="Image 3" className="layer2" />
+            </div>
+          </div>
+        </div>
+      </div>
+    ),
+    background: "url('src/assets/images/Rectangle-6651.png') center/cover no-repeat",
+  },
+  {
+    id: 2,
+    content: (
+      <div className="col-lg-6 text-start text-lg-start">
+        <h1 className="fw-bold title-text">Hi Candidate!</h1>
+        <h2 className="fw-bolder title-text blue-text">Are you looking for a Job?</h2>
+        <p className="title-subtext d-none d-lg-block">
+        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+        </p>
+        <button className="btn btn-primary job-seeker-button">Job Seeker</button>
+      </div>
+    ),
+    background: "url('src/assets/images/2nd-home-image.png') center/cover no-repeat",
+  },
+  {
+    id: 3,
+    content: (
+      <div className="row align-items-center">
+        {/* Left Section */}
+      <div className="col-lg-6 text-start text-lg-start">
+        <h1 className="fw-bold title-text">Hi Candidate!</h1>
+        <h2 className="fw-bolder title-text blue-text">Are you looking for a Job?</h2>
+        <p className="title-subtext d-none d-lg-block">
+        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+        </p>
+        <button className="btn btn-primary job-seeker-button">Job Seeker</button>
+      </div>
+      </div>
+      
+    ),
+    background: "url('src/assets/images/third-slide.png') center/cover no-repeat",
+  },
+];
+
+
 const Home = () => {
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth <= 1000);
+    };
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  };
+
   return (
     <>
 
@@ -12,47 +104,61 @@ const Home = () => {
      {/* job seeker - start */}
      <FormButton/>
 
-    <div className="below-header gradient-bg text-white pt-2">
-  
-      <div className="container py-5">
-        <div className="row align-items-center">
-          {/* Left Section */} 
-          <div className="col-lg-6 text-start text-lg-start">
-            <h1 className="fw-bold title-text">Hi Candidate!</h1>
-            <h2 className="fw-bolder title-text blue-text">
-              Are you looking for a Job?
-            </h2>
-            <p className="title-subtext d-none d-lg-block">
-              Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-              used in laying out print, graphic or web designs.
-            </p>
-            <button className="btn btn-primary job-seeker-button">
-              Job Seeker
-            </button>
-          </div>
+     <div
+  className="below-header text-white pt-2 position-relative"
+  style={{ 
+    background: isMobile
+      ? "url('src/assets/images/Rectangle-6651.png') center/cover no-repeat"
+      : slides[currentSlide].background 
+  }}
+>
+  {/* Left Arrow Button - Always Visible */}
+  <button className="slider-arrow left-arrow" onClick={() => setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1))}>
+    <FaArrowLeft />
+  </button>
 
-          {/*  Right Section (Images) */} 
-          <div className="col-lg-6 d-none d-lg-flex image-wrapper">
-            <div className="image-container">
-              <img src="src/assets/images/inner_image_1.png" alt="Image 1" />
-              <img src="src/assets/images/inner_image_2.png" alt="Image 2" />
-              <img src="src/assets/images/inner_image_3.png" alt="Image 3" />
-            </div>
-          </div>
-         
-        </div>
+  <div className="container py-5">
+    <div className="row align-items-center">{slides[currentSlide].content}</div>
 
-        {/*  Mobile View (Single Image) */} 
-        <div className="row d-lg-none text-center mt-4 mobile-image-container">
-          <img
-            src="src/assets/images/mobile_image_job_seeker.png"
-            alt="Mobile Image"
-            className="img-fluid mx-auto"
-          />
-        </div>
-      </div>
+    {/* Mobile Images (Different Image for Each Slide) */}
+    <div className="row d-lg-none text-center mt-4 mobile-image-container">
+      {currentSlide === 0 && (
+        <img src="src/assets/images/mobile_image_job_seeker.png" alt="Mobile Image 1" className="img-fluid mx-auto" />
+      )}
+      {currentSlide === 1 && (
+        <img src="src/assets/images/mobile_image_2.png" alt="Mobile Image 2" className="img-fluid mx-auto" />
+      )}
+      {currentSlide === 2 && (
+        <img src="src/assets/images/mobile_image_3.png" alt="Mobile Image 3" className="img-fluid mx-auto" />
+      )}
+    </div>
+  </div>
 
-      <div className="custom-container container bg-white mb-0 mt-0">
+  {/* Right Arrow Button - Always Visible */}
+  <button className="slider-arrow right-arrow" onClick={() => setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1))}>
+    <FaArrowRight />
+  </button>
+
+  {/* Indicators (Always Visible) */}
+  <div className="position-absolute start-50 translate-middle-x" style={{ top: "60%", display: "flex", gap: "8px" }}>
+    {slides.map((_, index) => (
+      <span
+        key={index}
+        className={`dot ${index === currentSlide ? "active-dot" : "inactive-dot"}`}
+        onClick={() => setCurrentSlide(index)}
+        style={{
+          width: "12px",
+          height: "12px",
+          borderRadius: "50%",
+          border: "2px solid white",
+          backgroundColor: index === currentSlide ? "white" : "transparent",
+          cursor: "pointer"
+        }}
+      ></span>
+    ))}
+  </div>
+
+       <div className="custom-container container bg-white mb-0 mt-0">
         <div className="scrollable-row scrollable-row2 ms-2">
           <div className="card">
             <img src="src/assets/images/full_stack.png" alt="Full Stack Icon" />
@@ -78,7 +184,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    
+
 
     {/*  job seeker - End */} 
 
@@ -238,7 +346,7 @@ const Home = () => {
           <div className="training-wrapper d-flex align-items-center">
             <div className="training-process">
               <img src="src/assets/images/training01.png" alt="Step 1" />
-              <div className="line-circle mt-1">
+              <div className="line-circle-start mt-1">
                 <div className="circle"></div>
               </div>
               <p className="below-line-number pt-2">01</p>
@@ -308,7 +416,7 @@ const Home = () => {
 
             <div className="training-process">
               <img src="src/assets/images/training06.png" alt="Step 6" />
-              <div className="line-circle mt-1">
+              <div className="line-circle-end mt-1">
                 <div className="circle"></div>
               </div>
               <p className="below-line-number pt-2">06</p>

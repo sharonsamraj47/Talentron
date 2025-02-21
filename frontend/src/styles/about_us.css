@@ -36,10 +36,10 @@
 }
 .welcome-to-talentron-overlay-container .overlay-bottom-right {
   position: absolute;
-  width: 33%;
+  width: 30%;
   height: auto;
-  top: 72%;
-  right: -8%;
+  top: 75%;
+  right: -7.2%;
 }
 .founder-image-section{
   flex-shrink: 0;
@@ -289,10 +289,6 @@ text-decoration-skip-ink: none;
   /* Welcome to talentron - end */
 
 /* Our mission and vision - start */
-
-
-
-
 
 .our-mission-vision-container {
   position: relative;

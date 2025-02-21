@@ -179,16 +179,16 @@ const TrainingPartnerPage = () => {
       </div>
     </div>
 
-    <div className="footer-bottom bg-dark bg-gradient text-white pt-3 pb-3">
+    <div className="bg-dark bg-gradient text-white pt-3 pb-3">
       <div className="explore-talentron-container">
         <div className="card">
           <div className="card-body">
             <img
               src="src/assets/images/training_partner_img/professional training.png"
               alt="Icon"
-              className="mb-3 ms-5 mt-3"
+              className="mb-3 ms-5 mt-3 card-body-img"
             />
-            <h5 className="card-title">Professional Training</h5>
+            <h5 className="card-title me-3">Professional Training</h5>
           </div>
         </div>
         <div className="card">
@@ -198,7 +198,7 @@ const TrainingPartnerPage = () => {
               alt="Icon"
               className="mb-3 ms-5 mt-3"
             />
-            <h5 className="card-title">Collaborate Peers</h5>
+            <h5 className="card-title me-3">Collaborate Peers</h5>
           </div>
         </div>
         <div className="card">
@@ -208,7 +208,7 @@ const TrainingPartnerPage = () => {
               alt="Icon"
               className="mb-3 ms-5 mt-3"
             />
-            <h5 className="card-title">Continuous Learning</h5>
+            <h5 className="card-title me-3">Continuous Learning</h5>
           </div>
         </div>
         <div className="card">
@@ -218,7 +218,7 @@ const TrainingPartnerPage = () => {
               alt="Icon"
               className="mb-3 ms-5 mt-3"
             />
-            <h5 className="card-title">Adaptation</h5>
+            <h5 className="card-title me-3">Adaptation</h5>
           </div>
         </div>
         <div className="card">
@@ -228,7 +228,7 @@ const TrainingPartnerPage = () => {
               alt="Icon"
               className="mb-3 ms-5 mt-3 "
             />
-            <h5 className="card-title">Experienced Mentors</h5>
+            <h5 className="card-title me-3">Experienced Mentors</h5>
           </div>
         </div>
       </div>

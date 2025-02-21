@@ -16,6 +16,41 @@
   /*title head - end */
 
   /* Email ids - start */
+  .email-box-container{
+    max-width: fit-content !important;
+  }
+  .tab-form-container{
+    max-width: 700px !important;
+  }
+  
+  .tab-button{
+    justify-content: center;
+    border: 1px solid black !important;
+    /* border-top: none !important; */
+    
+  }
+  @media (max-width: 768px){
+    .tab-button{
+      justify-content: flex-start;
+    }
+  }
+
+  .form-tab-submit{
+    height: 48px;
+    max-width: 638.4px;
+  }
+  .nav-link.form-tab {
+    flex-shrink: 0;
+    font-weight: bold;
+    border: 1px solid black !important;
+    padding: 0 !important;
+    min-width: 233.34px;
+    height: 75.6px;
+    color: #000000;
+    background-color: #868686;
+    border-radius: 0px 0px 0px 0px !important;
+    
+  }
 
   .Contact-Email-subtitle{
     font-family: "Montserrat", sans-serif;
@@ -50,7 +85,8 @@
 
   .icon-circle-1 {
     width: 40px;
-    height: 40px;
+    height: 40px !important;
+    min-height: 40px;
     border-radius: 50%;
     background-color: #006CBB;
     display: flex;
@@ -147,8 +183,8 @@
       flex-wrap: wrap;
     }
     .col-lg-3 {
-      flex: 0 0 50%; /* Ensure two boxes per row */
-      max-width: 50%;
+      flex: 0 0 50% !important;
+      max-width: 50% !important;
     }
     .arrow-icon{
       margin-bottom: 0px;
@@ -159,7 +195,7 @@
     .Contact-Email-custom-card-1, .Contact-Email-custom-card-2, .Contact-Email-custom-card-3, .Contact-Email-custom-card-4 {
       max-width: 580px;
       padding: 15px;
-      height: 134px;
+      height: 114px !important;
     } 
   
     .Contact-Email-text {
@@ -171,11 +207,10 @@
       font-size: 36px;
       margin-top: 0px;
     }  
-    .col-lg-3,
-    .col-md-6,
+
     .col-sm-12 {
-      flex: 0 0 100%; /* Full width for each box */
-      max-width: 100%;
+      flex: 0 0 100% !important; 
+      max-width: 100% !important;
     } 
   }
 

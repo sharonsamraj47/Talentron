@@ -52,7 +52,7 @@ const FooterForm = () => {
 
   return (
     <div
-      className="footer-top text-center bg-primary bg-gradient text-white pt-4 pb-4"
+      className="footer-top text-center footer-background-color text-white pt-4 pb-4"
     >
       <h2 className="headline white-text">
         Don't Miss Out, Develop Your Coding Skills with Talentron
